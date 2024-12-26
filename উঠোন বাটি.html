@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>উঠোন বাটি</title>
+    <!-- Favicon -->
+    <link rel="icon" href="path_to_favicon.ico" type="image/x-icon">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="উঠোন বাটি.html" class="home"><i class="fa fa-fw fa-home"></i> উঠোন বাটি</a>
+        <div class="navbar-right">
+            <a href="menu-word"><i class="fa fa-fw fa-cutlery"></i> মেনু</a>
+            <a href="review.html"><i class="fa fa-fw fa-star"></i> রিভিউ</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> যোগাযোগ করুন</a>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="image/home-3.jpg" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="image/home-2.jpg" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="image/home-1.jpg" alt="Banner 3">
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    
+    <h1 class="menu-word">Menu</h1>
+    <div class="menu-container" id="menuContainer">
+        <!-- Menu items will be generated here by JavaScript -->
+    </div>
+
+    <h2>Customer Reviews</h2>
+    <div class="review-container" id="reviewContainer">
+        <!-- Review photos will be dynamically generated here -->
+    </div>
+
+
+    <div class="container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="mailto:sidunnobiovi@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Write your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Shop Details -->
+        <div class="shop-details">
+            <h3>Shop Details</h3>
+            <p><strong>Shop Name:</strong> উঠোন বাটি</p>
+            <p><strong>Phone:</strong> 01745827703</p>
+            <p><strong>Email:</strong> <a href="mailto:sidunnobiovi@gmail.com">sidunnobiovi@gmail.com</a></p>
+            <p><strong>Location:</strong> <a href="https://www.google.com/maps?q=23.780728,90.373912" target="_blank">View on Google Maps</a></p>
+            <p><strong>Address:</strong> সরকারি সংগীত কলেজ এর পাশে</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 উঠোন বাটি
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
